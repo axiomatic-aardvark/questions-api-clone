@@ -13,7 +13,8 @@ fn setup_rocket() -> rocket::Rocket {
             questions::handler::rand,
             questions::handler::post,
             questions::handler::put,
-            questions::handler::delete
+            questions::handler::delete,
+            questions::handler::kinds
         ],
     )
 }

@@ -15,6 +15,13 @@ pub fn all(connection: DbConn) -> Result<Json<Vec<Question>>, Status> {
         .map_err(|error| error_status(error))
 }
 
+#[get("/kinds/<kinds>")]
+pub fn kinds(kinds: String, connection: DbConn) -> Result<Json<Vec<Question>>, Status> {
+    questions::repository::kinds(kinds, &connection)
+        .map(|questions| Json(questions))
+        .map_err(|error| error_status(error))
+}
+
 fn error_status(error: Error) -> Status {
     match error {
         Error::NotFound => Status::NotFound,

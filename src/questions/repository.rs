@@ -11,6 +11,36 @@ pub fn all(connection: &PgConnection) -> QueryResult<Vec<Question>> {
     questions::table.load::<Question>(&*connection)
 }
 
+pub fn kinds(kinds: String, connection: &PgConnection) -> QueryResult<Vec<Question>> {
+    println!("{}", kinds);
+
+    let mut all_matches = Vec::new();
+    let parts = kinds.split("ЮЮЮ").collect::<Vec<&str>>();
+
+    for kind in parts {
+        let all = questions::table.load::<Question>(&*connection);
+
+        match all {
+            Ok(all) => {
+                let matches = all
+                    .into_iter()
+                    .filter(|b| {
+                        b.kind.to_lowercase() == kind.to_lowercase()
+                            || b.kind.to_lowercase().contains(kind.to_lowercase().as_str())
+                    })
+                    .collect::<Vec<Question>>();
+
+                for m in matches {
+                    all_matches.push(m);
+                }
+            }
+            Err(_) => {},
+        }
+    }
+
+    Ok(all_matches)
+}
+
 pub fn get(id: i32, connection: &PgConnection) -> QueryResult<Question> {
     questions::table.find(id).get_result::<Question>(connection)
 }

@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f004cfd-9949-43e3-a2fc-1915b0da1f99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/questions/handler.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions/handler.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questions/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/questions/repository.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions/repository.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/questions/router.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions/router.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
@@ -43,17 +43,16 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633194526081</updated>
       <workItem from="1633194527316" duration="849000" />
+      <workItem from="1639083349047" duration="3116000" />
     </task>
     <servers />
   </component>
@@ -80,5 +80,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
